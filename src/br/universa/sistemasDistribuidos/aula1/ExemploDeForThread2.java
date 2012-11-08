@@ -19,9 +19,10 @@ public class ExemploDeForThread2 extends Thread {
 			System.out.println(getName() + " Número sequencial: " + i);
 
 		}
-
+		System.out.println("************************************************");
 		System.out.println("Tempo de execução: "
 				+ (new Date().getTime() - inicial.getTime()));
+		System.out.println("************************************************");
 
 	}
 
