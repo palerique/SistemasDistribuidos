@@ -9,7 +9,7 @@ import java.net.Socket;
 public class EchoClient {
 	public static void main(String[] args) throws IOException {
 		try {
-			Socket echoSocket = new Socket("172.16.1.113", 4444);
+			Socket echoSocket = new Socket("172.16.1.100", 4444);
 			PrintWriter out = new PrintWriter(echoSocket.getOutputStream(),
 					true);
 			BufferedReader stdIn = new BufferedReader(new InputStreamReader(
