@@ -9,6 +9,7 @@ public class Servidor {
 	public static void main(String[] args) {
 		try {
 			ServerSocket serverSocket = new ServerSocket(4444);
+			System.out.println("Aguardando mensagem");
 			Socket clientSocket = serverSocket.accept();
 			BufferedReader in = new BufferedReader(new InputStreamReader(
 					clientSocket.getInputStream()));
